@@ -46,7 +46,7 @@ crossfade_duration="4"
 fadeout_duration="2"
 
 jingle="jingles/jingle.wav"
-audiofile="example show_clip_quiet.wav"
+audiofile="test.wav"
 
 echo "finding sample rate"
 sampleRate=$(get_sample_rate "$audiofile")
