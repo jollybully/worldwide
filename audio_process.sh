@@ -35,7 +35,7 @@ fade_out() {
 	echo $fade_start
 
 	echo "adding fade and encoding mp3"
-	ffmpeg -hide_banner -loglevel error -i "$1" -af "afade=t=out:st=$fade_start:d=$fadeout_duration" -codec:a libmp3lame -b:a 320k output.mp3
+	ffmpeg -hide_banner -loglevel error -i "$1" -af "afade=t=out:st=$fade_start:d=$fadeout_duration" -codec:a libmp3lame -b:a 320k "FINAL_$1".mp3
 }
 
 # VARIABLES
